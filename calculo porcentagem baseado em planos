@@ -1,0 +1,15 @@
+assinatura_d = int(input("Por favor, digite o número relacionado ao seu tipo de assinatura (basic = 1, silver = 2, gold = 3, platinum = 4): "))
+rendimento = float(input("Por favor, informe o seu rendimento anual em R$: "))
+bonus_basic = rendimento * 0.3
+bonus_silver = rendimento * 0.2
+bonus_gold = rendimento * 0.1
+bonus_platinum = rendimento * 0.05
+
+if assinatura_d == 1:
+    print("O valor pago de bônus será de R${:.2f}.".format(bonus_basic))
+elif assinatura_d == 2:
+    print("O valor pago de bônus será de R${:.2f}.".format(bonus_silver))
+elif assinatura_d == 3:
+    print("O valor pago de bônus será de R${:.2f}.".format(bonus_gold))
+elif assinatura_d == 4:
+    print("O valor pago de bônus será de R${:.2f}.".format(bonus_platinum))
