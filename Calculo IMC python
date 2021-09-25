@@ -1,0 +1,31 @@
+peso = float(input("Por favor, digite seu peso em KG: "))
+altura = float(input("Por favor, digite sua altura em Metros: "))
+altura_quadrado = altura * altura
+
+imc = peso / altura_quadrado
+
+print("Seu IMC é: {:.2f}".format(imc))
+
+if imc <= 16.00:
+    print("Você se encontra na faixa de Baixo peso grau III.")
+
+if 16.00 <= imc <= 16.99:
+    print("Você se encontra na faixa de Baixo peso grau II")
+
+if 17.00 <= imc <= 18.49:
+    print("Você se encontra na faixa de Baixo peso Grau I")
+
+if 18.50 <= imc <= 24.99:
+    print("Você se encontra na faixa de Peso Ideal")
+
+if 25.00 <= imc <= 29.99:
+    print("Você se encontra na faixa de Sobrepeso")
+
+if 30.00 <= imc <= 34.99:
+    print("Você se encontra na faixa de Obesidade Grau I")
+
+if 35.00 <= imc <= 39.99:
+    print("Você se encontra na faixa de Obesidade Grau II")
+
+if imc >= 40.00:
+    print("Você se encontra na faixa de Obesidade Grau III")
